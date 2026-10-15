@@ -1,5 +1,8 @@
 package java_Test_261015;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 public class MainClass {
 
 	public static void main(String[] args) {
@@ -34,6 +37,19 @@ public class MainClass {
         //객체의 멤버 변수값을 가져오려면 getter를 사용
         String bid = board1.getBoardWriter(); //boardWriter값을 반환
         System.out.println(bid);
+        
+        ArrayList<Board> boardList = new ArrayList<>();
+        
+        boardList.add(board1);
+        boardList.add(board2);
+        
+        HashMap<Integer, String> hmap = new HashMap<>();
+        hmap.put(1, "홍길동");
+        hmap.put(2, "김유신");
+        hmap.put(3, "강감찬");
+        
+       System.out.println(hmap.get(3));
+       System.out.println(hmap.get(1)); 
 	}
 
 }
